@@ -1,0 +1,21 @@
+{
+  "name": "new-qa-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "cypress:run:spec": "cypress run --spec 'cypress/integration/login.feature'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "cypress": "^13.17.0",
+    "@cypress/browserify-preprocessor": "latest"  
+  }
+}
