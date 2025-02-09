@@ -1,4 +1,4 @@
-/// <reference types="cypress" />​
+/// <reference types="cypress" />
 
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
@@ -10,15 +10,18 @@ this.data = data
 })
 
 Given ('I navigate to demoblaze website', function() {
-cy.navigateToPage(Cypress.environment("baseURL"));
+cy.visit(Cypress.env("baseURL"));
+cy.viewport(1800,1000)
 })
 
 When ('I click the login button', function(){
-cy.clickLoginButton()
+cy.get('#login2').click()
 cy.wait(2000)
 })
 
 When ('I enter valid login details', function(){
-cy.login(this.data.Username, this.data.Password)
+cy.get('#loginusername').type(this.data.Username)
+//cy.get('#loginusername').clear()
+cy.get('#loginpassword').type(this.data.Password)
+cy.get("button[onclick='logIn()']").click()
 })
-

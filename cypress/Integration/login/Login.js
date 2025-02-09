@@ -2,7 +2,7 @@
 
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 Given ('I open Ecommerce page', function(){
-    cy.visit(Cypress.environment("baseURL"));
+    cy.visit(Cypress.env("baseURL"));
     cy.viewport(1800,1000)
 })
 When ('I click the login button', function(){

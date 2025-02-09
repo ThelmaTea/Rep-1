@@ -21,11 +21,11 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  environment: {
+  env: {
     baseURL: "https://www.demoblaze.com/",
   },
   e2e: {
-baseUrl: "https://duckduckgo.com",
+
  specPattern: 'cypress/integration/*.feature',
     setupNodeEvents,
   },
