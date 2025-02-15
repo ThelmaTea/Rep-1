@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-  "cypress:open": "cypress open",
+    "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:spec": "cypress run --spec 'cypress/integration/login.feature'"
@@ -14,10 +14,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^13.17.0"
-  },
-  "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
-    "@cypress/browserify-preprocessor": "latest"  
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^14.0.3"
   }
 }
